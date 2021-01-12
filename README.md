@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# McMakler Challenge for Senior Frontend Developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This code was created solely for McMakler challenge for the senior frontend developer position. The following stack is used:
+* React
+* React Router
+* Typescript
+* React Intl
+* JSON Server
+* Styled Components
 
 ## Available Scripts
 
