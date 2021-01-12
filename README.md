@@ -8,6 +8,10 @@ This code was created solely for McMakler challenge for the senior frontend deve
 * JSON Server
 * Styled Components
 
+## Demo
+You can find the demo of the challenge here:
+https://mcmakler-challenge.herokuapp.com/
+
 ## Usage:
 First we will need to install node dependencies:
 ### `npm i`
