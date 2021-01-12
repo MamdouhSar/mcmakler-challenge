@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {IntlProvider} from 'react-intl'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import messages from './i18n/en';
+import Layout from './containers/Layout';
+import Applications from './containers/Applications';
+import Paper from './components/Paper';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IntlProvider messages={messages} locale="" defaultLocale="en">
+      <Router>
+        <Layout>
+          <Switch>
+            <Paper>
+              <Route path="/">
+                <Applications/>
+              </Route>
+            </Paper>
+          </Switch>
+        </Layout>
+      </Router>
+    </IntlProvider>
   );
 }
 
