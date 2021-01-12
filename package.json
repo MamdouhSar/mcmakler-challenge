@@ -12,6 +12,7 @@
     "@types/react-dom": "^16.9.10",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.7",
+    "express": "^4.17.1",
     "json-server": "^0.16.3",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -24,14 +25,12 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start & json-server --watch ./server/db.json --port 3004 --delay 1000",
-    "start-prod": "serve -s build & json-server --watch ./server/db.json --port 3004 --delay 1000 ",
+    "start": "NODE_ENV=production node server",
+    "dev": "NODE_ENV=development react-scripts start & json-server ./server/db.json --routes ./server/routes.json --delay 1000 --port 3001",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "dev": "react-scripts start",
-    "server": "json-server --watch ./server/db.json --port 3004 --delay 1000",
-    "db": "node server/db.js"
+    "db": "node ./server/db.js"
   },
   "eslintConfig": {
     "extends": [

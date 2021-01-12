@@ -1,4 +1,4 @@
-const API_HOST = "http://localhost:3004";
+const API_HOST = process.env.NODE_ENV === 'development' ? "http://localhost:3001/api" : "/api";
 
 export const checkHttpStatus = (response: Response) =>  {
   if (response.status >= 200 && response.status < 300) {

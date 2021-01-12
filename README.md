@@ -12,20 +12,15 @@ This code was created solely for McMakler challenge for the senior frontend deve
 First we will need to install node dependencies:
 ### `npm i`
 
-To run React development server along side JSON server:
-### `npm start`
-
 To create an optimized build for production:
 ### `npm run build`
 
-To run React production server along side JSON server:
-### `npm run start-prod`
+To run production with json-server:
+### `npm run build`
+### `npm start`
 
-To run React development server alone:
+To run React development server with JSON server:
 ### `npm run dev`
-
-To run JSON server alone:
-### `npm run server`
 
 To generate new database for JSON-server:
 ### `npm run db`
