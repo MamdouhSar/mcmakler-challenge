@@ -20,8 +20,10 @@ To create an optimized build for production:
 ### `npm run build`
 
 To run production with json-server:
-### `npm run build`
-### `npm start`
+
+    npm run build
+    npm start
+    
 
 To run React development server with JSON server:
 ### `npm run dev`
